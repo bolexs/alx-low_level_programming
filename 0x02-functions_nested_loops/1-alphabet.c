@@ -1,14 +1,18 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * print_alphabet - prints the alphabet
- * Return: void
+ * main -  prints _putchar, followed by a new line
+ * Return: Always 0 (Success)
  */
-void print_alphabet(void)
+int main(void)
 {
-	char i = 'a';
+	char *main = "_putchar";
 
-	while (i <= 'z')
-		_putchar(i++);
+	while (*main)
+	{
+		_putchar(*main);
+		main++;
+	}
 	_putchar('\n');
+	return (0);
 }
