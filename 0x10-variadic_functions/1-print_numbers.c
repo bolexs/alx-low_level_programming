@@ -19,12 +19,12 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_start(list, n);
 	for (i = 0; i < n; i++)
 	{
-		print f("%d", va_arg(list, int));
+		printf("%d", va_arg(list, int));
 		if (separator != NULL && i != n - 1)
 		{
-			print f("%s", separator);
+			printf("%s", separator);
 		}
 	}
 	va_end(list);
-	print f("\n");
+	printf("\n");
 }
